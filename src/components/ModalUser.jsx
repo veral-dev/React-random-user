@@ -32,7 +32,7 @@ const ModalUser = ({ handleClose, id }) => {
 
     const userEdit = () => {
         let userCopy = users[id]
-        userCopy = { ...userCopy, name: { first: newUser.first, last: newUser.last } }
+        userCopy = { ...userCopy, name: { first: newUser.first, last: newUser.last }, phone: newUser.phone }
         let usersCopy = [...users]
         usersCopy[id] = userCopy
         setUsers(usersCopy)
